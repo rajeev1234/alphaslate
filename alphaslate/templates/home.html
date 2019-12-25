@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Welcome to the Dashboard <span class="icon-emo-happy"></span></h2>
+  <p class="lead">
+    Already Account <a href="{% url 'login' %}">log in</a>. <br />
+    Student SignUp <a href="{% url 'student_signup' %}">Student account</a> <br />
+    Admin SignUp <a href="{% url 'teacher_signup' %}"> Admin account</a>.
+  </p>
+  <hr>
+{% endblock %}
